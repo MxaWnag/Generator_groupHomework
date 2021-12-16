@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="freemarker-2.3.27-incubating">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../freemarker-2.3.27-incubating.jar!/" />
+      <root url="jar://$PROJECT_DIR$/freemarker-2.3.27-incubating.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
