@@ -24,8 +24,7 @@ public class ${className}Test {
         @Test
         public void test${method}(){
         ${className} testObj=new ${className}();
-        int result = testObj.${method}(1,2);
-        assertEquals(result,3);
+        assertTrue(testObj.${method}());
         }
     </#list>
     </#if>

@@ -54,7 +54,9 @@ public class Employee {
 
         return "name:"+firstname.get(fn)+" "+lastname.get(ln)+"\n"+"age:"+age+"\n"+"hasMarry:"+hasMarry;
     }
-
+    public int getAge(){
+        return this.age;
+    }
     private void load(String name, List<String> col) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream(name),"US-ASCII"));
         try {

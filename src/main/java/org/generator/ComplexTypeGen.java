@@ -16,4 +16,8 @@ public class ComplexTypeGen {
         pos = Math.abs(pos+d.getPrime()) % d.size();
         return d.combination(pos);
     }
+    public int getAge(){
+        Employee d = Employee.INSTANCE;
+        return d.getAge();
+    }
 }

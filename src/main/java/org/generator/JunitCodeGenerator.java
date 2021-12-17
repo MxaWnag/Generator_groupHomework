@@ -24,9 +24,9 @@ public class JunitCodeGenerator {
     private static final String BASE_PACKAGE = "test/java";//项目中代码根路径
 
 
-    private String author;//注释中作者名称
+//    private String author;//注释中作者名称
 
-    private String sourceClass="E:\\Software Testing  Verification\\wordnet-random-name-master\\src\\main\\java\\org\\generator\\CodeTest.java";//源类全路径
+    private String sourceClass="E:\\Software Testing  Verification\\Generator_groupHomework\\src\\main\\java\\org\\generator\\EmployeeJunit.java";//源类全路径
 
     private  String templateName="test.ftl";//模板名称
     //项目根路径
@@ -38,8 +38,8 @@ public class JunitCodeGenerator {
 
 
 
-    public JunitCodeGenerator(String author, String sourceClass, String templateName) {
-        this.author = author;
+    public JunitCodeGenerator( String sourceClass, String templateName) {
+//        this.author = author;
         this.sourceClass=sourceClass;
         this.templateName=templateName;
     }
@@ -92,7 +92,7 @@ public class JunitCodeGenerator {
         }
         data.put("basePackage", BASE_PACKAGE+"."+sourcePackage.getName());
         data.put("realPackage", sourcePackage.getName());
-        data.put("author", author);
+//        data.put("author", author);
         Method[] methods=sourceGalss.getDeclaredMethods();
         List<String> methodNameList=new ArrayList<>();
         for (int i = 0; i < methods.length; i++) {
@@ -123,7 +123,7 @@ public class JunitCodeGenerator {
         final String outFile =
                 rootSrcPath +  BASE_PACKAGE.replace(".", "/") + "/"  +sourcePackage.getName().replace(".","/").replace("/main/","/test/")+"/"+
                         fileName + "Test.java";
-        System.out.println("sourcePackageName:"+sourcePackage.getName()+"\n");
+//        System.out.println("sourcePackageName:"+sourcePackage.getName()+"\n");
         final String outFilePath=rootSrcPath +  BASE_PACKAGE.replace(".", "/") + "/"  +sourcePackage.getName().replace(".","/");
         File filePath=new File(outFilePath);
         if (!filePath.exists()){
