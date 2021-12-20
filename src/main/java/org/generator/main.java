@@ -33,12 +33,17 @@ public class main {
 		String tmp = codeGenerator.getRootSrcPath();
 		System.out.println(tmp+"\n");
 	}
+	public static void SampleLoopGenerator(){
+		SampleLoopGen gen = new SampleLoopGen();
+		gen.test();
+	}
 
 	public static void main(String[] args) {
 
 		//GraphRun();
-		ComplexTypeGeneration();
-		JunitGenerator();
+		//ComplexTypeGeneration();
+		//JunitGenerator();
+		SampleLoopGenerator();
 	}
 
 }
