@@ -40,9 +40,9 @@ public class main {
 
 	public static void main(String[] args) {
 
-		//GraphRun();
-		//ComplexTypeGeneration();
-		//JunitGenerator();
+		GraphRun();
+		ComplexTypeGeneration();
+		JunitGenerator();
 		SampleLoopGenerator();
 	}
 
