@@ -8,7 +8,6 @@ import static org.junit.Assert.*;
 /**
  * ${className}的测试类
  *
- * @author ${author}
  * @date ${date}
  */
 public class ${className}Test {
