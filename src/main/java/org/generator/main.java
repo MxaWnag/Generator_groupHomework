@@ -88,17 +88,19 @@ public class main {
 	}
 	public static void SampleLoopGenerator(){
 		SampleLoopGen gen = new SampleLoopGen();
-		gen.test();
+		gen.testSimple1();
+		gen.testSimple2();
 	}
 
 	public static void main(String[] args) {
 
-//		GraphRun();
-//	ComplexTypeGeneration();
-//		JunitGenerator();
-//		SampleLoopGenerator();
-//		RandomArrayGen();
-		RandomQueueGen();
+		GraphRun();//基路径生成
+	    ComplexTypeGeneration();//复杂变量生成
+		RandomArrayGen();//随机数组生成
+		RandomQueueGen();//随机队列生成
+		JunitGenerator();//junit单元测试生成
+		SampleLoopGenerator();//循环结构测试生成
+
 	}
 
 }

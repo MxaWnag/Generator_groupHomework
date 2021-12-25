@@ -4,6 +4,13 @@ public class Edge {
 
 	private final Node	source;
 	private final Node	target;
+	public Node getSource() {
+		return source;
+	}
+
+	public Node getTarget() {
+		return target;
+	}
 
 	public Edge(Node source, Node target) {
 		this.source = source;
@@ -12,13 +19,7 @@ public class Edge {
 		target.getIncomingEdges().add(this);
 	}
 
-	public Node getSource() {
-		return source;
-	}
 
-	public Node getTarget() {
-		return target;
-	}
 
 	@Override
 	public String toString() {
