@@ -23,9 +23,6 @@ public class JunitCodeGenerator {
      */
     private static final String BASE_PACKAGE = "test/java";//项目中代码根路径
 
-
-//    private String author;//注释中作者名称
-
     private String sourceClass="E:\\Software Testing  Verification\\Generator_groupHomework\\src\\main\\java\\org\\generator\\EmployeeJunit.java";//源类全路径
 
     private  String templateName="test.ftl";//模板名称

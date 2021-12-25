@@ -53,6 +53,11 @@ public class main {
 		RandomArray ra = new RandomArray();
 		Random rand = new Random();
 		int[] arr = ra.genInt(rand.nextInt(50),20);
+
+		RandomQueue<Integer> test = new RandomQueue<>();
+		test = test.generator();
+		System.out.println(test.size());
+
 		//System.out.println(arr.length);
 		//通过add方法
 		for (int i=0;i<arr.length;i++){
@@ -70,6 +75,7 @@ public class main {
 		System.out.println(rq.size());
 
 		System.out.println(rd.size());
+
 
 
 	}

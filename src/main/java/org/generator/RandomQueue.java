@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
         static int length = 8;
 
-
         LinkedList<E>[][] randomlist = new LinkedList[length][length];
+
         Random rand;
         int count = 0;
 
@@ -250,7 +250,19 @@ import java.util.ArrayList;
             return null;
         }
 
+        public RandomQueue<E> generator(){
+            RandomQueue<Integer> rd = new RandomQueue<Integer>();
+            RandomArray ra = new RandomArray();
+            Random rand = new Random();
+            int[] arr = ra.genInt(rand.nextInt(50),20);
+            Collection<Integer> str = new ArrayList<>();
 
+            for(int i=0;i<arr.length;i++){
+                str.add(arr[i]);
+            }
+            rd.addAll(str);
+            return (RandomQueue<E>) rd;
+        }
 
     }
 
