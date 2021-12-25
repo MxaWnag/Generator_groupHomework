@@ -2,6 +2,8 @@ package org.generator;
 
 import graph.Graph;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
 
@@ -51,10 +53,22 @@ public class main {
 		RandomArray ra = new RandomArray();
 		Random rand = new Random();
 		int[] arr = ra.genInt(rand.nextInt(50),20);
-		System.out.println(arr.length);
+		//System.out.println(arr.length);
+		//通过add方法
 		for (int i=0;i<arr.length;i++){
 			rd.add(arr[i]);
 		}
+		//通过addAll方法
+		Collection<Integer> str = new ArrayList<>();
+
+		for(int i=0;i<arr.length;i++){
+			str.add(arr[i]);
+		}
+		RandomQueue<Integer> rq = new RandomQueue<>();
+		rq.addAll(str);
+		System.out.println(arr.length);
+		System.out.println(rq.size());
+
 		System.out.println(rd.size());
 
 

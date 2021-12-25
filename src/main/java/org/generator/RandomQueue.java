@@ -102,6 +102,7 @@ import java.util.ArrayList;
         public boolean addAll(Collection<? extends E> c) {
             int i = rand.nextInt(length);
             int j = rand.nextInt(length);
+            count += c.size();
             return randomlist[i][j].addAll(c);
         }
         @Override
@@ -111,8 +112,10 @@ import java.util.ArrayList;
                     randomlist[i][j].removeAll(c);
                 }
             }
+            count -= c.size();
             return true;
         }
+        //在Collection以外的元素是否在queue中
         @Override
         public boolean retainAll(Collection<?> c) {
             for (int i = 0; i < length; ++i) {
@@ -246,6 +249,7 @@ import java.util.ArrayList;
             }
             return null;
         }
+
 
 
     }
