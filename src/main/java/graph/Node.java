@@ -15,6 +15,26 @@ public class Node {
 		this.number = number;
 	}
 
+	public Set<Edge> getIncomingEdges() {
+		return this.incomingEdges;
+	}
+
+	public int getIndegree() {
+		return this.incomingEdges.size();
+	}
+
+	public String getNumber() {
+		return number;
+	}
+
+	public int getOutdegree() {
+		return this.outgoingEdges.size();
+	}
+
+	public Set<Edge> getOutgoingEdges() {
+		return this.outgoingEdges;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
@@ -37,25 +57,7 @@ public class Node {
 		return true;
 	}
 
-	public Set<Edge> getIncomingEdges() {
-		return this.incomingEdges;
-	}
 
-	public int getIndegree() {
-		return this.incomingEdges.size();
-	}
-
-	public String getNumber() {
-		return number;
-	}
-
-	public int getOutdegree() {
-		return this.outgoingEdges.size();
-	}
-
-	public Set<Edge> getOutgoingEdges() {
-		return this.outgoingEdges;
-	}
 
 	@Override
 	public int hashCode() {
